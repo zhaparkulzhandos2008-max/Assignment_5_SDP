@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JUnit Jupiter" tests="32" skipped="0" failures="0" errors="0" time="0.16" hostname="8e1a1eed06f2" timestamp="2026-10-21T08:25:20">
+<properties>
+<property name="file.encoding" value="UTF-8"/>
+<property name="file.separator" value="/"/>
+<property name="java.class.path" value="tools/junit.jar"/>
+<property name="java.class.version" value="61.0"/>
+<property name="java.home" value="/usr/lib/jvm/java-17-openjdk-amd64"/>
+<property name="java.io.tmpdir" value="/tmp"/>
+<property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+<property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+<property name="java.runtime.version" value="17.0.20+8-1-24.04-Ubuntu"/>
+<property name="java.specification.maintenance.version" value="1"/>
+<property name="java.specification.name" value="Java Platform API Specification"/>
+<property name="java.specification.vendor" value="Oracle Corporation"/>
+<property name="java.specification.version" value="17"/>
+<property name="java.vendor" value="Ubuntu"/>
+<property name="java.vendor.url" value="https://ubuntu.com/"/>
+<property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-17"/>
+<property name="java.version" value="17.0.20"/>
+<property name="java.version.date" value="2026-07-21"/>
+<property name="java.vm.compressedOopsMode" value="32-bit"/>
+<property name="java.vm.info" value="mixed mode, sharing"/>
+<property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+<property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+<property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+<property name="java.vm.specification.version" value="17"/>
+<property name="java.vm.vendor" value="Ubuntu"/>
+<property name="java.vm.version" value="17.0.20+8-1-24.04-Ubuntu"/>
+<property name="jdk.debug" value="release"/>
+<property name="line.separator" value="
+"/>
+<property name="native.encoding" value="UTF-8"/>
+<property name="os.arch" value="amd64"/>
+<property name="os.name" value="Linux"/>
+<property name="os.version" value="6.18.55"/>
+<property name="path.separator" value=":"/>
+<property name="sun.arch.data.model" value="64"/>
+<property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
+<property name="sun.cpu.endian" value="little"/>
+<property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+<property name="sun.java.command" value="tools/junit.jar execute --class-path SmartDelivery/target/classes:SmartDelivery/target/test-classes --scan-class-path --disable-ansi-colors --reports-dir SmartDelivery/docs/test-results"/>
+<property name="sun.java.launcher" value="SUN_STANDARD"/>
+<property name="sun.jnu.encoding" value="UTF-8"/>
+<property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+<property name="user.dir" value="/workspace/scratch/5632c7457daa"/>
+<property name="user.home" value="/root"/>
+<property name="user.language" value="en"/>
+<property name="user.name" value="root"/>
+<property name="user.timezone" value="America/Chicago"/>
+</properties>
+<testcase name="requestCopiesProhibitionSet()" classname="kz.aitu.delivery.DeliveryTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:requestCopiesProhibitionSet()]
+display-name: requestCopiesProhibitionSet()
+]]></system-out>
+</testcase>
+<testcase name="negativeAndNanWeightsRejected()" classname="kz.aitu.delivery.DeliveryTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:negativeAndNanWeightsRejected()]
+display-name: negativeAndNanWeightsRejected()
+]]></system-out>
+</testcase>
+<testcase name="unavailableCheapGreenRouteNeverWins()" classname="kz.aitu.delivery.DeliveryTest" time="0.004">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:unavailableCheapGreenRouteNeverWins()]
+display-name: unavailableCheapGreenRouteNeverWins()
+]]></system-out>
+</testcase>
+<testcase name="prohibitionIsAHardConstraint()" classname="kz.aitu.delivery.DeliveryTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:prohibitionIsAHardConstraint()]
+display-name: prohibitionIsAHardConstraint()
+]]></system-out>
+</testcase>
+<testcase name="autoSelectsAllFourPriorities()" classname="kz.aitu.delivery.DeliveryTest" time="0.006">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:autoSelectsAllFourPriorities()]
+display-name: autoSelectsAllFourPriorities()
+]]></system-out>
+</testcase>
+<testcase name="duplicateRouteIdsRejected()" classname="kz.aitu.delivery.DeliveryTest" time="0.024">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:duplicateRouteIdsRejected()]
+display-name: duplicateRouteIdsRejected()
+]]></system-out>
+</testcase>
+<testcase name="emissionsAreHardConstraints()" classname="kz.aitu.delivery.DeliveryTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:emissionsAreHardConstraints()]
+display-name: emissionsAreHardConstraints()
+]]></system-out>
+</testcase>
+<testcase name="fastestIncludesTrafficAndWeather()" classname="kz.aitu.delivery.DeliveryTest" time="0.006">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:fastestIncludesTrafficAndWeather()]
+display-name: fastestIncludesTrafficAndWeather()
+]]></system-out>
+</testcase>
+<testcase name="ecoBalancesEmissionAndDistance()" classname="kz.aitu.delivery.DeliveryTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:ecoBalancesEmissionAndDistance()]
+display-name: ecoBalancesEmissionAndDistance()
+]]></system-out>
+</testcase>
+<testcase name="balancedTimeOnlyMatchesFastest()" classname="kz.aitu.delivery.DeliveryTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:balancedTimeOnlyMatchesFastest()]
+display-name: balancedTimeOnlyMatchesFastest()
+]]></system-out>
+</testcase>
+<testcase name="deadlineFiltersEcoWinner()" classname="kz.aitu.delivery.DeliveryTest" time="0.013">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:deadlineFiltersEcoWinner()]
+display-name: deadlineFiltersEcoWinner()
+]]></system-out>
+</testcase>
+<testcase name="customSelectorRuleIsExtensible()" classname="kz.aitu.delivery.DeliveryTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:customSelectorRuleIsExtensible()]
+display-name: customSelectorRuleIsExtensible()
+]]></system-out>
+</testcase>
+<testcase name="missingRequestAndStrategyRejected()" classname="kz.aitu.delivery.DeliveryTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:missingRequestAndStrategyRejected()]
+display-name: missingRequestAndStrategyRejected()
+]]></system-out>
+</testcase>
+<testcase name="singleCandidateNormalizationHasNoDivisionByZero()" classname="kz.aitu.delivery.DeliveryTest" time="0.015">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:singleCandidateNormalizationHasNoDivisionByZero()]
+display-name: singleCandidateNormalizationHasNoDivisionByZero()
+]]></system-out>
+</testcase>
+<testcase name="comparisonRetainsFailures()" classname="kz.aitu.delivery.DeliveryTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:comparisonRetainsFailures()]
+display-name: comparisonRetainsFailures()
+]]></system-out>
+</testcase>
+<testcase name="invalidWeightSumRejected()" classname="kz.aitu.delivery.DeliveryTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:invalidWeightSumRejected()]
+display-name: invalidWeightSumRejected()
+]]></system-out>
+</testcase>
+<testcase name="comparisonRunsSameRequestThroughAllStrategies()" classname="kz.aitu.delivery.DeliveryTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:comparisonRunsSameRequestThroughAllStrategies()]
+display-name: comparisonRunsSameRequestThroughAllStrategies()
+]]></system-out>
+</testcase>
+<testcase name="invalidRequestAndCoordinatesRejected()" classname="kz.aitu.delivery.DeliveryTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:invalidRequestAndCoordinatesRejected()]
+display-name: invalidRequestAndCoordinatesRejected()
+]]></system-out>
+</testcase>
+<testcase name="balancedDefaultHasExpectedWinnerAndScore()" classname="kz.aitu.delivery.DeliveryTest" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:balancedDefaultHasExpectedWinnerAndScore()]
+display-name: balancedDefaultHasExpectedWinnerAndScore()
+]]></system-out>
+</testcase>
+<testcase name="runtimeSwitchesSamePlannerThreeTimes()" classname="kz.aitu.delivery.DeliveryTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:runtimeSwitchesSamePlannerThreeTimes()]
+display-name: runtimeSwitchesSamePlannerThreeTimes()
+]]></system-out>
+</testcase>
+<testcase name="costIncludesPrioritySurcharge()" classname="kz.aitu.delivery.DeliveryTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:costIncludesPrioritySurcharge()]
+display-name: costIncludesPrioritySurcharge()
+]]></system-out>
+</testcase>
+<testcase name="budgetChangesFastestChoice()" classname="kz.aitu.delivery.DeliveryTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:budgetChangesFastestChoice()]
+display-name: budgetChangesFastestChoice()
+]]></system-out>
+</testcase>
+<testcase name="explanationContainsFormulaAndRejections()" classname="kz.aitu.delivery.DeliveryTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:explanationContainsFormulaAndRejections()]
+display-name: explanationContainsFormulaAndRejections()
+]]></system-out>
+</testcase>
+<testcase name="urgentRuleHasPriorityOverEcoPreference()" classname="kz.aitu.delivery.DeliveryTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:urgentRuleHasPriorityOverEcoPreference()]
+display-name: urgentRuleHasPriorityOverEcoPreference()
+]]></system-out>
+</testcase>
+<testcase name="negativeDistanceRejected()" classname="kz.aitu.delivery.DeliveryTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:negativeDistanceRejected()]
+display-name: negativeDistanceRejected()
+]]></system-out>
+</testcase>
+<testcase name="ecoPreferenceOverridesEconomy()" classname="kz.aitu.delivery.DeliveryTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:ecoPreferenceOverridesEconomy()]
+display-name: ecoPreferenceOverridesEconomy()
+]]></system-out>
+</testcase>
+<testcase name="emptyCandidatesFailExplicitly()" classname="kz.aitu.delivery.DeliveryTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:emptyCandidatesFailExplicitly()]
+display-name: emptyCandidatesFailExplicitly()
+]]></system-out>
+</testcase>
+<testcase name="identicalMetricsTieBreakByIdIndependentOfOrder()" classname="kz.aitu.delivery.DeliveryTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:identicalMetricsTieBreakByIdIndependentOfOrder()]
+display-name: identicalMetricsTieBreakByIdIndependentOfOrder()
+]]></system-out>
+</testcase>
+<testcase name="noFeasibleRouteHasExplicitDiagnostic()" classname="kz.aitu.delivery.DeliveryTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:noFeasibleRouteHasExplicitDiagnostic()]
+display-name: noFeasibleRouteHasExplicitDiagnostic()
+]]></system-out>
+</testcase>
+<testcase name="exactBudgetDeadlineEmissionBoundariesAreInclusive()" classname="kz.aitu.delivery.DeliveryTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:exactBudgetDeadlineEmissionBoundariesAreInclusive()]
+display-name: exactBudgetDeadlineEmissionBoundariesAreInclusive()
+]]></system-out>
+</testcase>
+<testcase name="cheapestUsesAllCostComponents()" classname="kz.aitu.delivery.DeliveryTest" time="0.008">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:cheapestUsesAllCostComponents()]
+display-name: cheapestUsesAllCostComponents()
+]]></system-out>
+</testcase>
+<testcase name="fifthStrategyMinimizesFeasibleDistance()" classname="kz.aitu.delivery.DeliveryTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:kz.aitu.delivery.DeliveryTest]/[method:fifthStrategyMinimizesFeasibleDistance()]
+display-name: fifthStrategyMinimizesFeasibleDistance()
+]]></system-out>
+</testcase>
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]
+display-name: JUnit Jupiter
+]]></system-out>
+</testsuite>

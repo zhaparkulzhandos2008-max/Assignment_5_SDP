@@ -1,0 +1,17 @@
+sequenceDiagram
+ participant C as Main
+ participant S as StrategySelector
+ participant P as RoutePlanner
+ participant F as FastestRouteStrategy
+ participant H as RouteConstraints
+ C->>S: select(urgentRequest)
+ S-->>C: fastestStrategy
+ C->>P: setStrategy(fastestStrategy)
+ C->>P: plan(routes, urgentRequest)
+ P->>F: selectRoute(routes, urgentRequest)
+ Note over F: Inherited final method in ScoredRouteStrategy
+ F->>H: filter(routes, urgentRequest)
+ H-->>F: Candidates(valid, rejected)
+ Note over F: Score feasible routes by effective time<br/>Tie break by route ID and build explanation
+ F-->>P: RouteDecision(R2, time 23, cost 5800)
+ P-->>C: RouteDecision

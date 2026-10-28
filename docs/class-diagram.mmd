@@ -1,0 +1,92 @@
+classDiagram
+ direction TB
+ class Main
+ class RoutePlanner {
+  -RouteStrategy strategy
+  +setStrategy(RouteStrategy)
+  +plan(List~Route~, DeliveryRequest) RouteDecision
+ }
+ class RouteStrategy {
+  <<interface>>
+  +selectRoute(List~Route~, DeliveryRequest) RouteDecision
+  +getStrategyName() String
+ }
+ class ScoredRouteStrategy {
+  <<abstract>>
+  +selectRoute(List~Route~, DeliveryRequest) RouteDecision
+  #score(Route, DeliveryRequest, List~Route~) double
+  #explain(Route, DeliveryRequest, List~Route~) String
+ }
+ class FastestRouteStrategy
+ class CheapestRouteStrategy
+ class EcoFriendlyRouteStrategy
+ class BalancedRouteStrategy
+ class DistanceFirstStrategy
+ class StrategySelector {
+  -List~Rule~ rules
+  +select(DeliveryRequest) RouteStrategy
+ }
+ class Rule {
+  +Predicate condition
+  +RouteStrategy strategy
+ }
+ class RouteConstraints {
+  +filter(List~Route~, DeliveryRequest) Candidates
+ }
+ class RouteMetrics {
+  +time(Route) double
+  +cost(Route, DeliveryRequest) double
+ }
+ class Route {
+  <<record>>
+  +String id
+  +Location origin
+  +Location destination
+  +double distanceKm
+  +int estimatedMinutes
+  +boolean available
+ }
+ class Location {
+  <<record>>
+ }
+ class DeliveryRequest {
+  <<record>>
+  +DeliveryPriority priority
+  +double maxBudget
+  +int maxDeliveryMinutes
+  +boolean ecoPreferred
+  +double maxEmissionKg
+  +Set prohibitedRouteIds
+ }
+ class RouteDecision {
+  <<record>>
+  +Route route
+  +double score
+  +String explanation
+  +Map rejectedRoutes
+ }
+ class StrategyComparison
+ class NoSuitableRouteException
+ Main ..> StrategySelector
+ Main ..> RoutePlanner
+ Main ..> StrategyComparison
+ RoutePlanner o--> RouteStrategy : delegates
+ RouteStrategy <|.. ScoredRouteStrategy
+ ScoredRouteStrategy <|-- FastestRouteStrategy
+ ScoredRouteStrategy <|-- CheapestRouteStrategy
+ ScoredRouteStrategy <|-- EcoFriendlyRouteStrategy
+ ScoredRouteStrategy <|-- BalancedRouteStrategy
+ ScoredRouteStrategy <|-- DistanceFirstStrategy
+ ScoredRouteStrategy *--> RouteConstraints
+ ScoredRouteStrategy ..> RouteDecision : creates
+ ScoredRouteStrategy ..> RouteMetrics
+ StrategySelector *--> Rule
+ Rule o--> RouteStrategy
+ StrategySelector ..> DeliveryRequest
+ RouteConstraints ..> Route
+ RouteConstraints ..> DeliveryRequest
+ RouteConstraints ..> RouteMetrics
+ RouteConstraints ..> NoSuitableRouteException : throws
+ Route o--> Location
+ RouteDecision --> Route
+ StrategyComparison o--> RouteStrategy

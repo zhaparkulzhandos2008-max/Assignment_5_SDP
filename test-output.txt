@@ -1,0 +1,55 @@
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+╷
+├─ JUnit Jupiter ✔
+│  └─ DeliveryTest ✔
+│     ├─ duplicateRouteIdsRejected() ✔
+│     ├─ autoSelectsAllFourPriorities() ✔
+│     ├─ costIncludesPrioritySurcharge() ✔
+│     ├─ deadlineFiltersEcoWinner() ✔
+│     ├─ fastestIncludesTrafficAndWeather() ✔
+│     ├─ emissionsAreHardConstraints() ✔
+│     ├─ missingRequestAndStrategyRejected() ✔
+│     ├─ noFeasibleRouteHasExplicitDiagnostic() ✔
+│     ├─ exactBudgetDeadlineEmissionBoundariesAreInclusive() ✔
+│     ├─ emptyCandidatesFailExplicitly() ✔
+│     ├─ cheapestUsesAllCostComponents() ✔
+│     ├─ singleCandidateNormalizationHasNoDivisionByZero() ✔
+│     ├─ prohibitionIsAHardConstraint() ✔
+│     ├─ negativeAndNanWeightsRejected() ✔
+│     ├─ urgentRuleHasPriorityOverEcoPreference() ✔
+│     ├─ balancedDefaultHasExpectedWinnerAndScore() ✔
+│     ├─ customSelectorRuleIsExtensible() ✔
+│     ├─ comparisonRunsSameRequestThroughAllStrategies() ✔
+│     ├─ comparisonRetainsFailures() ✔
+│     ├─ explanationContainsFormulaAndRejections() ✔
+│     ├─ unavailableCheapGreenRouteNeverWins() ✔
+│     ├─ negativeDistanceRejected() ✔
+│     ├─ requestCopiesProhibitionSet() ✔
+│     ├─ invalidWeightSumRejected() ✔
+│     ├─ fifthStrategyMinimizesFeasibleDistance() ✔
+│     ├─ ecoBalancesEmissionAndDistance() ✔
+│     ├─ ecoPreferenceOverridesEconomy() ✔
+│     ├─ invalidRequestAndCoordinatesRejected() ✔
+│     ├─ identicalMetricsTieBreakByIdIndependentOfOrder() ✔
+│     ├─ runtimeSwitchesSamePlannerThreeTimes() ✔
+│     ├─ balancedTimeOnlyMatchesFastest() ✔
+│     └─ budgetChangesFastestChoice() ✔
+├─ JUnit Vintage ✔
+└─ JUnit Platform Suite ✔
+
+Test run finished after 250 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[        32 tests found           ]
+[         0 tests skipped         ]
+[        32 tests started         ]
+[         0 tests aborted         ]
+[        32 tests successful      ]
+[         0 tests failed          ]
+

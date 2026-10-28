@@ -1,0 +1,66 @@
+RUNTIME SWITCHING: same RoutePlanner, three switches
+Fastest -> R2 | time=23 min | cost=4800.00 KZT | distance=16.0 km | CO2=4.50 kg | score=23.0000
+Reason: Minimum effective time: base 20 + traffic 2 + weather 1 = 23.0 min
+Rejected R7: Route unavailable
+Cheapest -> R5 | time=45 min | cost=1580.00 KZT | distance=18.0 km | CO2=2.50 kg | score=1580.0000
+Reason: Minimum total cost: base 500.0 + distance 18.0 * 60.0 + fees 0.0 + urgent surcharge 0 = 1580.0 KZT
+Rejected R7: Route unavailable
+Eco Friendly -> R4 | time=43 min | cost=2210.00 KZT | distance=13.0 km | CO2=0.40 kg | score=1.6600
+Reason: Minimum eco score: 0.4 kg * 0.9 + 13.0 km * 0.1 = 1.6600000000000001
+Rejected R7: Route unavailable
+Balanced -> R6 | time=32 min | cost=3050.00 KZT | distance=9.0 km | CO2=1.60 kg | score=0.3591
+Reason: Min-max normalized (time,cost,distance,CO2) = (0.4091,0.4565,0.0000,0.2927); weights = (0.40,0.30,0.10,0.20); score = 0.3591
+Rejected R7: Route unavailable
+
+AUTOMATIC SELECTION: first matching business rule wins
+Request URGENT budget=10000.0
+Fastest -> R2 | time=23 min | cost=5800.00 KZT | distance=16.0 km | CO2=4.50 kg | score=23.0000
+Reason: Minimum effective time: base 20 + traffic 2 + weather 1 = 23.0 min
+Rejected R4: Delivery deadline exceeded
+Rejected R5: Delivery deadline exceeded
+Rejected R7: Route unavailable
+Request ECONOMY budget=2000.0
+Cheapest -> R5 | time=45 min | cost=1580.00 KZT | distance=18.0 km | CO2=2.50 kg | score=1580.0000
+Reason: Minimum total cost: base 500.0 + distance 18.0 * 60.0 + fees 0.0 + urgent surcharge 0 = 1580.0 KZT
+Rejected R1: Budget exceeded
+Rejected R2: Budget exceeded
+Rejected R4: Budget exceeded
+Rejected R6: Budget exceeded
+Rejected R7: Route unavailable
+Rejected R8: Budget exceeded
+Request ECO budget=10000.0
+Eco Friendly -> R4 | time=43 min | cost=2210.00 KZT | distance=13.0 km | CO2=0.40 kg | score=1.6600
+Reason: Minimum eco score: 0.4 kg * 0.9 + 13.0 km * 0.1 = 1.6600000000000001
+Rejected R7: Route unavailable
+Request STANDARD budget=10000.0
+Balanced -> R6 | time=32 min | cost=3050.00 KZT | distance=9.0 km | CO2=1.60 kg | score=0.3591
+Reason: Min-max normalized (time,cost,distance,CO2) = (0.4091,0.4565,0.0000,0.2927); weights = (0.40,0.30,0.10,0.20); score = 0.3591
+Rejected R7: Route unavailable
+
+COMPARISON: identical request
+Fastest -> R2 | time=23 min | cost=4800.00 KZT | distance=16.0 km | CO2=4.50 kg | score=23.0000
+Reason: Minimum effective time: base 20 + traffic 2 + weather 1 = 23.0 min
+Rejected R7: Route unavailable
+Cheapest -> R5 | time=45 min | cost=1580.00 KZT | distance=18.0 km | CO2=2.50 kg | score=1580.0000
+Reason: Minimum total cost: base 500.0 + distance 18.0 * 60.0 + fees 0.0 + urgent surcharge 0 = 1580.0 KZT
+Rejected R7: Route unavailable
+Eco Friendly -> R4 | time=43 min | cost=2210.00 KZT | distance=13.0 km | CO2=0.40 kg | score=1.6600
+Reason: Minimum eco score: 0.4 kg * 0.9 + 13.0 km * 0.1 = 1.6600000000000001
+Rejected R7: Route unavailable
+Balanced -> R6 | time=32 min | cost=3050.00 KZT | distance=9.0 km | CO2=1.60 kg | score=0.3591
+Reason: Min-max normalized (time,cost,distance,CO2) = (0.4091,0.4565,0.0000,0.2927); weights = (0.40,0.30,0.10,0.20); score = 0.3591
+Rejected R7: Route unavailable
+Distance First -> R6 | time=32 min | cost=3050.00 KZT | distance=9.0 km | CO2=1.60 kg | score=9.0000
+Reason: Minimum feasible distance: 9.0 km
+Rejected R7: Route unavailable
+
+DYNAMIC BUDGET: fastest with budget 3500
+Fastest -> R6 | time=32 min | cost=3050.00 KZT | distance=9.0 km | CO2=1.60 kg | score=32.0000
+Reason: Minimum effective time: base 27 + traffic 4 + weather 1 = 32.0 min
+Rejected R2: Budget exceeded
+Rejected R7: Route unavailable
+
+FAILURE SCENARIOS
+NoSuitableRouteException: No suitable route: empty candidate list
+NoSuitableRouteException: No suitable route: {R1=[Budget exceeded, Delivery deadline exceeded], R2=[Budget exceeded, Delivery deadline exceeded], R3=[Budget exceeded, Delivery deadline exceeded], R4=[Budget exceeded, Delivery deadline exceeded], R5=[Budget exceeded, Delivery deadline exceeded], R6=[Budget exceeded, Delivery deadline exceeded], R7=[Route unavailable, Budget exceeded, Delivery deadline exceeded], R8=[Budget exceeded, Delivery deadline exceeded]}
+IllegalArgumentException: Weights must sum to 1.0
